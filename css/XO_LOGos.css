@@ -1,0 +1,126 @@
+.game {
+    height: 714px;
+    width: 653px;
+    background-image: url(../images/game1.png);
+    position: absolute;
+    top:710%;
+    z-index: 800
+}
+
+.game_led {
+    height: 714px;
+    width: 653px;
+    background-image: url(../images/game2.png);
+    position: absolute;
+    top: 0px;
+    left: -644px;
+    z-index: 801
+}
+
+.board {
+    height: 420px;
+    width: 420px;
+    margin: 0 auto;
+    position: absolute;
+    top: 171px;
+    left: 153px;
+    z-index: 802;
+    
+        
+}
+@keyframes board{
+    0%{
+       box-shadow: 0px 0px 50px #66cdaa; 
+    }
+    100%{
+        box-shadow: 0px 0px 30px #66cdaa; 
+    }
+}
+.cell {
+    width: 107px;
+    height: 97px;
+    border: 3px solid #66cdaa;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    line-height: 97px;
+    text-align: center;
+    font-family: "Rektec";
+    font-weight: bold;
+    font-size: 77px;
+    box-shadow: 0px 0px 50px #66cdaa;
+    animation: board 0.9s ease-out infinite;
+}
+
+.cell:hover {
+    box-shadow: 0px 0px 50px #6897bb;
+}
+
+.control {
+    font-family: "Arial Narrow";
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    position: absolute;
+    top: 449px;
+    left: 168px;
+    z-index: 802;
+    
+}
+
+.level {
+    margin: 0 15px;
+    color: #66cdaa;
+    box-shadow: 0px 0px 50px #6897bb;
+    cursor: pointer;
+    animation: board 0.9s ease-out infinite;
+}
+
+.not-selected {
+    opacity: 0.5;
+}
+
+.not-selected:hover {
+    opacity: 1;
+}
+
+.start {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #66cdaa;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    opacity: 0.5;
+    box-shadow: 0px 0px 50px #66cdaa;
+    animation: board 0.9s ease-out infinite;
+}
+
+.start:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 50px #6897bb;
+}
+
+.ingame {
+    display: none;
+    color: #305c89;
+    box-shadow: 0px 0px 50px #305c89;
+}
+
+.ingame > p {
+    margin: 0px;
+}
+
+.robot {
+    opacity: 0.5;
+}

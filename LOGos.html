@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content="width=device-width, initial-scale=1.0">
+    <title>LOG.Os</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/XO_LOGos.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    
+    <script src="https://use.fontawesome.com/1010aea292.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    
+<!--    <script src="js/script.js"></script>-->
+      <script src="js/main.js"></script>
+       
+        <script src="js/gameUI.js"></script>
+        <script src="js/game.js"></script>
+        <script src="js/gameAI.js"></script>
+        <script src="js/gameControls.js"></script>
+
+    <script type="text/javascript" src="js/jquery.scrollify.js"></script>
+    <script src="js/transition.js"></script>
+</head>
+<!--COMENTS!!!!!!!!!!!!!!!!!!! to hack LOG.Os and unblock mouse wheel delete the 'stop-scrolling' class!!!!!!!!!!!!!!!!!!-->
+
+<body>
+    <!--    --------------------begining and sections-->
+
+    <div id="scienceFacility">
+       
+       <audio id="section_move" src="audio/section_move.mp3" type="audio/mp3"></audio>
+        <!----------------------------------------------------------------------sections-->
+        <section id='section_One '>
+            <audio id="welcome" src="audio/1welcome.mp3" type="audio/mp3"></audio>
+            <div class="container">
+                <div class="wraper">
+                    <div class="begin_right"></div>
+
+                    <div class="begin_spinLoad"></div>
+                    <div class="begin_useAudio"><span>site uses audio <i class="fa fa-volume-up" aria-hidden="true"></i></span></div>
+                    <div class="beginScroll"><span>scroll down</span></div>
+                    <div class="begin_scroll_down"><i class="fa fa-arrow-down" aria-hidden="true"></i></div>
+
+                </div>
+            </div>
+        </section>
+        <section id='section_Two  '>
+            <audio id="type" src="audio/human.mp3" type="audio/mp3"></audio>
+            <audio id="hello_human" src="audio/hello1.mp3" type="audio/mp3"></audio>
+            <audio id="stupid" src="audio/stupid.mp3" type="audio/mp3"></audio>
+            <div class="cube">
+                <img src="images/ledwrite.png" alt="ledwrite" class='ledwrite'>
+                <textarea name="ledwrite" class="ledwrite_user" cols="10" rows="1" placeholder='type'></textarea>
+                <div class="confirm">CONFIRM</div>
+                <img src="images/led.png" alt="led" class='led'>
+
+                <img src="images/ledtext.png" alt="ledtext" id='ledtext'>
+            </div>
+        </section>
+        <section data-section-name="section_Three" id='section_Three '></section>
+        <section data-section-name="section_Four" id='panel section_Four'></section>
+        <section id='section_Five '>
+            <audio id="test1" src="audio/test%201.mp3" type="audio/mp3"></audio>
+            <audio id="test1_what" src="audio/what.mp3" type="audio/mp3"></audio>
+            <audio id="test1_dont" src="audio/again%20dont.mp3" type="audio/mp3"></audio>
+            <audio id="test1_stop" src="audio/stop.mp3" type="audio/mp3"></audio>
+            <audio id="test1_stopAngry" src="audio/stop%20evil.mp3" type="audio/mp3"></audio>
+            <div class="push_button">
+                <div class="button_part_1"></div>
+                <div class="button_part_2"><span class='span_1'>PUSH ME!</span>
+                    <span class='span_2'>scroll down!<i class="fa fa-arrow-down" aria-hidden="true"></i></span></div>
+            </div>
+        </section>
+        <section id='section_Six '>
+            <audio id="test1_saarcasm" src="audio/saarcasm.mp3" type="audio/mp3"></audio>
+            <audio id="test1_fat" src="audio/you%20are%20fat.mp3" type="audio/mp3"></audio>
+        </section>
+        <section id='section_Seven '></section>
+        <section id='section_Eight '>
+            <div class="game">
+               <audio id="metall" src="audio/Metall.wav" type="audio/wav"></audio>
+                <div class="game_led">
+                    <audio id="test2" src="audio/test2angry.mp3" type="audio/mp3"></audio>
+                    <audio id="proceed" src="audio/proceed.mp3" type="audio/mp3"></audio>
+                     <audio id="LOGOS_inGame_MOVE" src="audio/LOGOS_inGame_MOVE.wav" type="audio/mp3"></audio>
+                    <div class='board'>
+                        <!-- data-indx following cell divs represents cell index in 1D array representation -->
+                        <div class='cell' data-indx="0"></div>
+                        <div class='cell' data-indx="1"></div>
+                        <div class='cell' data-indx="2"></div>
+                        <div class='cell' data-indx="3"></div>
+                        <div class='cell' data-indx="4"></div>
+                        <div class='cell' data-indx="5"></div>
+                        <div class='cell' data-indx="6"></div>
+                        <div class='cell' data-indx="7"></div>
+                        <div class='cell' data-indx="8"></div>
+                    </div>
+ 
+                    <div class='control'>
+                        <!-- div.intial displays the starting controls -->
+                        <div class='intial'>
+                            <div class='difficulty'>
+                                <span class='level not-selected' id="blind">Blind</span>
+                                <span class='level not-selected' id="novice">Novice</span>
+                                <span class='level not-selected' id="master">Master!</span>
+                            </div>
+
+                            <div class='start'> Start </div>
+                        </div>
+
+                        <!-- div.ingame displays in-game messages and controls -->
+                        <div class='ingame' id="human">It's your turn ...</div>
+                        <div class='ingame' id="ai">
+
+                        </div>
+                        <div class='ingame' id="won">You won !</div>
+                        <div class='ingame' id="lost">You lost !</div>
+                        <div class='ingame' id="draw">It's a Draw</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id='section_Nine '><audio id="theEnd" src="audio/theEnd.mp3" type="audio/mp3"></audio></section>
+
+
+
+
+
+
+        <!--  ------------------------------------------------------paralax efects  -->
+
+        <div id="parallax-bg1">
+            <img src="images/ggg.jpg" id="bg1-1" />
+        </div>
+        <div class="deadBody"></div>
+
+        <div id="parallax-bg2">
+            <img src="images/bg2-min.png" id="bg2-1" />
+        </div>
+        <div id="parallax-bg5">
+            <img src="images/backgirders-min.png" id="bg5-1" />
+        </div>
+        <div id="parallax-bg6">
+            <img src="images/sun%20rays.png" id="bg6-1" />
+        </div>
+        <div class="bg2"></div>
+        <div class="cross"></div>
+        <div class="test_parallax_1"></div>
+        <div class="test_parallax_2"></div>
+        <div class="test_parallax_3"></div>
+        <div class="tests_bg"></div>
+        <div class="tests_bg2"></div>
+        <div class="test_parallax_2_2"></div>
+
+
+        <!-------------------------------------------------------------------------logOs comp-->
+        <div id="computer">
+            <div id="logos">
+                <div class="eye"></div>
+                <div class="eyeball"></div>
+                <div class="compLight"></div>
+                <img src="images/logOs.png" id="logOS" />
+            </div>
+        </div>
+
+        
+
+    </div>
+
+
+</body>
+
+</html>

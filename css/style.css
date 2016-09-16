@@ -1,0 +1,669 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    @font-face {
+        font-family: Rektec;
+        src: url(../fonts/comp.ttf);
+    }
+    
+    body {
+        background: url(../images/ggg.jpg);
+        background-repeat: repeat-y;
+        overflow-x: hidden;
+       
+    }
+    
+    .begin_right {
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background-color: #E68836;
+        right: 0%;
+        top: 0;
+        z-index: 100;
+    }
+    
+    .begin_spinLoad {
+        height: 60px;
+        width: 60px;
+        background-color: transparent;
+        border: 4px solid transparent;
+        border-radius: 50%;
+        border-top-color: #ffffea;
+        border-bottom-color: #ffffea;
+        position: absolute;
+        top: 43%;
+        left: 46%;
+        z-index: 200;
+        animation: spin 1s linear infinite
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg) scale(1);
+        }
+        50% {
+            transform: rotate(45deg) scale(1.3);
+        }
+        100% {
+            transform: rotate(360deg) scale(1);
+        }
+    }
+    
+    .begin_useAudio {
+        font-family: Rektec;
+        color: #ffffea;
+        position: absolute;
+        top: 57%;
+        left: 42%;
+        font-size: 25px;
+        animation: glow 2s linear infinite;
+        z-index: 200;
+    }
+    
+    @keyframes glow {
+        0% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0.5;
+        }
+    }
+    
+    .beginScroll {
+        position: absolute;
+        top: 60%;
+        left: 44%;
+        opacity: 1;
+        font-family: Rektec;
+        font-size: 25px;
+        color: black;
+        z-index: 200;
+    }
+    
+    .begin_scroll_down {
+        position: absolute;
+        top: 66%;
+        left: 47%;
+        font-family: Rektec;
+        font-size: 25px;
+        color: #ffffea;
+        animation: downer 1.2s linear infinite;
+        z-index: 200;
+    }
+    
+    @keyframes downer {
+        0% {
+            opacity: 1;
+            top: 66%;
+        }
+        100% {
+            opacity: 0;
+            top: 72%;
+        }
+    }
+    
+    .cont {
+        margin-top: 800px;
+        height: 500px;
+        width: 100px;
+        background-color: black;
+        opacity: 0;
+    }
+    
+    .cont1 {
+        margin-top: 800px;
+        height: 500px;
+        width: 100px;
+        background-color: black;
+        opacity: 0;
+        display: none;
+    }
+    
+    #parallax-bg1 {
+        z-index: 70;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 900px;
+    }
+    
+    #bg1-1 {
+        position: absolute;
+        top: 0;
+    }
+    
+    #parallax-bg2 {
+        z-index: 79;
+        position: fixed;
+        top: 0;
+    }
+    
+    #bg2-1 {
+        top: 200px;
+        left: 200px;
+        position: absolute;
+        width: 1300px;
+        height: 3300px;
+    }
+    
+    .bg2 {
+        background-image: url(../images/ggg2-min.png);
+        height: 3700px;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        z-index: 80;
+        /*    opacity: 0;*/
+    }
+    
+    #parallax-bg3 {
+        z-index: 79;
+        position: fixed;
+        top: 0;
+    }
+    
+    #bg3-1 {
+        top: 300px;
+        left: 20px;
+        position: absolute;
+        width: 1300px;
+        height: 3300px;
+    }
+    
+    #parallax-bg5 {
+        z-index: 77;
+        position: fixed;
+        top: -200;
+        left: 400px;
+    }
+    
+    #bg5-1 {
+        top: 0px;
+        left: 0px;
+        position: absolute;
+        width: 1300px;
+        height: 3300px;
+    }
+    
+    #parallax-bg6 {
+        z-index: 78;
+        position: fixed;
+        top: -200;
+        left: 400px;
+    }
+    
+    #bg6-1 {
+        top: 300px;
+        left: 0px;
+        position: absolute;
+        width: 1300px;
+        height: 3300px;
+    }
+    
+    .deadBody {
+        background-image: url(../images/burnt_body.png);
+        width: 241px;
+        height: 552px;
+        top: 300px;
+        left: 323px;
+        position: absolute;
+        z-index: 79;
+    }
+    /*========================LOGOS ROBOT*/
+    
+    #computer {
+        top: 900px;
+        right: 0px;
+        position: absolute;
+        z-index: 86;
+        overflow: hidden;
+    }
+    
+    #computer>img {
+        max-height: 500px;
+        max-width: 440px;
+    }
+    
+    #logOS {
+        margin-right: -800px;
+    }
+    
+    .eye {
+        z-index: 87;
+        position: absolute;
+        top: 250px;
+        right: 628px;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px #fff;
+        background-color: #333333;
+        border: 4px solid transparent;
+        border-top-color: #0892d0;
+        border-bottom-color: #0892d0;
+        margin-right: -800px;
+        animation: spin 1s linear infinite;
+    }
+.angryEye{
+     z-index: 87;
+        position: absolute;
+        top: 250px;
+        right: 628px;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 80px #D80036;
+        background-color: #333333;
+        border: 4px solid transparent;
+        border-top-color: #D80036;
+        border-bottom-color: #D80036;
+        margin-right: -800px;
+        animation: spin 1s linear infinite;
+}
+    
+    .eyeball {
+        z-index: 87;
+        position: absolute;
+        top: 254px;
+        right: 631px;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: #ffec8b;
+        border: 8px solid #333333;
+        box-shadow: 0px 0px 5px #ffec8b;
+        margin-right: -800px;
+    }
+    
+    .compLight {
+        z-index: 87;
+        position: absolute;
+        top: 258px;
+        right: 552px;
+        height: 5px;
+        width: 5px;
+        border-radius: 50%;
+        margin-right: -800px;
+        background-color: transparent;
+        border: 4px solid transparent;
+        border-top-color: #D80036;
+        border-bottom-color: #D80036;
+        border-left-color: #D80036;
+        animation: spincomp 0.5s linear infinite
+    }
+    
+    @keyframes spincomp {
+        0% {
+            transform: rotate(0deg) scale(1);
+            opacity: 0.5;
+        }
+        100% {
+            transform: rotate(360deg) scale(1);
+            opacity: 1;
+        }
+    }
+    /*=====================sections*/
+    
+    .section1 {
+        position: absolute;
+        top: 0px;
+    }
+    
+    .section2 {
+        position: absolute;
+        top: 1100px;
+    }
+    
+    .section3 {
+        position: absolute;
+        top: 2200px;
+    }
+    
+    .section4 {
+        position: absolute;
+        top: 3300px;
+    }
+    
+    .cube {
+        top: 203%;
+        left: -655px;
+        height: 500px;
+        width: 500px;
+        position: absolute;
+        opacity: 1;
+    }
+    
+    .cube>img {
+        position: absolute;
+    }
+    
+    .cube>textarea {
+        resize: none;
+        position: absolute;
+        top: 344px;
+        left: 399px;
+        z-index: 299;
+        font-family: Rektec;
+        font-size: 30px;
+        background-color: #CCCCCC;
+        opacity: 1
+    }
+    
+    .confirm {
+        position: absolute;
+        top: 393px;
+        left: 436px;
+        z-index: 299;
+        font-family: Rektec;
+        font-size: 20px;
+        border: 1px solid #007b4a;
+        color: #007b4a;
+        cursor: pointer;
+        /*    animation: ledwrite 10s linear*/
+    }
+    
+    .confirm:hover {
+        box-shadow: 0px 0px 9px #007b4a
+    }
+    
+    .led {
+        top: -106px;
+        left: 0;
+        z-index: 300;
+        position: absolute;
+    }
+    
+    #ledtext {
+        top: 200px;
+        left: 368px;
+        z-index: 340;
+        animation: textAnimate 1s linear infinite
+    }
+    
+    @keyframes textAnimate {
+        0% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .ledwrite {
+        top: 212px;
+        left: 304px;
+        z-index: 295;
+        /*    290*/
+        /*    animation: ledwrite 10s linear*/
+    }
+    
+    @keyframes ledwrite {
+        0% {
+            top: 212px;
+        }
+        100% {
+            top: 408px;
+        }
+    }
+    
+    .cubemove {
+        top: 408px;
+        animation: ledwrite 2s linear
+    }
+    
+    .cubemoveConfirm {
+        top: 587px;
+        animation: cubemoveConfirm 2s linear;
+    }
+    
+    @keyframes cubemoveConfirm {
+        0% {
+            top: 393px;
+        }
+        100% {
+            top: 587px;
+        }
+    }
+    
+    #cubemoveArea {
+        top: 540px;
+        animation: cubemoveArea 2s linear;
+        opacity: 1
+    }
+    
+    @keyframes cubemoveArea {
+        0% {
+            top: 344px;
+            opacity: 0;
+        }
+        100% {
+            top: 540px;
+            opacity: 1;
+        }
+    }
+    
+    #newCube {
+        z-index: 300
+    }
+    
+    section {
+        height: 100%;
+        
+    }
+    
+    .stop-scrolling {
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    #fixedLogos {
+        position: absolute;
+        z-index: 800;
+        top: 300%;
+        right: 0;
+        animation: fixedLogos 5s ease-out
+    }
+    
+    @keyframes fixedLogos {
+        0% {
+            right: -850px;
+        }
+        100% {
+            right: 0;
+        }
+    }
+    /*===================TESTS===========*/
+    
+    .cross {
+        background-image: url(../images/cross%20from%201%20to%202.png);
+        height: 800px;
+        width: 100%;
+        position: absolute;
+        top: 3273px;
+        z-index: 85;
+    }
+    
+    .tests_bg {
+        background-image: url(../images/tests-min.png);
+        height: 3337px;
+        width: 100%;
+        position: absolute;
+        top: 3650px;
+        z-index: 79;
+/*            opacity: 0;*/
+    }
+    
+    .test_parallax_1 {
+        background-image: url(../images/test_parallax_1.png);
+        height: 800px;
+        width: 825px;
+        position: absolute;
+        top: 3273px;
+        right: -247px;
+        z-index: 83;
+    }
+    
+    .test_parallax_2 {
+        background-image: url(../images/test_parallax_2.png);
+        height: 1290px;
+        width: 1050px;
+        position: absolute;
+        top: 3273px;
+        left: 0;
+        z-index: 784;
+    }
+    
+    .test_parallax_3 {
+        background-image: url(../images/test_parallax_3.png);
+        height: 1100px;
+        width: 100%;
+        position: absolute;
+        top: 3273px;
+        left: 0;
+        z-index: 84;
+    }
+    /*---------test 1-----------*/
+    
+    .push_button {
+        width: 643px;
+        height: 668px;
+        position: absolute;
+        top: 410%px;
+        left: -650px;
+        z-index: 100;
+    }
+    
+    .button_part_1 {
+        background-image: url(../images/Button_part_1.png);
+        width: 643px;
+        height: 668px;
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        z-index: 105;
+        /*    animation: button_par_1 1s linear*/
+    }
+    
+    .button_part_2 {
+        background-color: firebrick;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 102px;
+        left: 384px;
+        z-index: 806;
+        border-radius: 50%;
+        box-shadow: 0px 0px 20px #3c9f9d;
+        transition: 1s;
+        animation: button_par_2 1s linear infinite
+    }
+    
+    .button_part_2>span {
+        font-family: Rektec;
+        color: aliceblue;
+        font-size: 30px;
+        position: absolute;
+        top: 61px;
+        left: 9px
+    }
+    
+    @keyframes button_par_2 {
+        0% {
+            box-shadow: 0px 0px 20px #3c9f9d;
+        }
+        50% {
+            box-shadow: 0px 0px 50px #f4f4f4;
+        }
+        75% {
+            box-shadow: 0px 0px 50px #3c9f9d;
+        }
+        75% {
+            box-shadow: 0px 0px 20px #3c9f9d;
+        }
+    }
+    
+    .button_part_2:hover {
+        cursor: pointer;
+        background-color: #5cb360;
+    }
+    
+    .button_part_2:active {
+        cursor: pointer;
+        transition: 0.2s;
+        background-color: #3c9f9d;
+        box-shadow: 0px 0px 6px black;
+        animation: none;
+    }
+    
+    .button_part_2_2 {
+        background-color: #0eff00;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 102px;
+        left: 384px;
+        z-index: 106;
+        border-radius: 50%;
+    }
+    
+    .button_part_2>.span_2 {
+        display: none;
+        font-family: Rektec;
+        color: aliceblue;
+        font-size: 25px;
+        position: absolute;
+        top: 61px;
+        left: 9px;
+        text-align: center;
+    }
+    
+    .button_part_2>.span_2>i {
+        margin: auto;
+        animation: arrow 1s linear infinite
+    }
+    
+    @keyframes arrow {
+        0% {
+            margin: auto;
+        }
+        100% {
+            margin-top: 20px
+        }
+    }
+    
+    #angryLogos {
+        position: absolute;
+        z-index: 700;
+        top: 495%;
+        right: 0;
+        animation: fixedLogos 5s ease-out
+    }
+    
+    @keyframes fixedLogos {
+        0% {
+            right: -850px;
+        }
+        100% {
+            right: 0;
+        }
+    }
+.tests_bg2{
+    background-image: url(../images/tests_bg2.jpg);
+        height: 2105px;
+        width: 100%;
+        position: absolute;
+        top: 6221px;
+        z-index: 78;
+}
+.test_parallax_2_2 {
+        background-image: url(../images/test_parallax_1.png);
+        height: 800px;
+        width: 825px;
+        position: absolute;
+        top: 6273px;
+        right: -247px;
+        z-index: 83;
+    }
