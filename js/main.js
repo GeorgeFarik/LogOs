@@ -37,22 +37,11 @@ $(document).ready(function () {
             , overflowScroll: true
             , before: function () {
                 var currentSlide = $.scrollify.current();
-                // log the id of slide  
+                
                 console.log(currentSlide);
-
-                /*if (currentSlide.context.id == "section_Two" )  {
-
-                   
-            }*/
 
             }
 
-
-
-
-
-
-            
             , after: function () {}
             , afterResize: function () {}
             , afterRender: function () {}
@@ -171,54 +160,9 @@ $(document).on('scroll', function () {
     //----------------------------------------------------------
 
 //=========================animation when section in view=======================================================
-/*
+
 function dotNav() {
-    var nav1 = $('#section_One');
-    var nav2 = $('#section_Two');
-    var nav3 = $('#section_Three');
-    var nav4 = $('#section_Four');
-    var nav5 = $('#section_Five');
-    var nav6 = $('#section_Six');
-    var nav7 = $('#section_Seven');
-    var nav8 = $('#section_Eight');
-    var nav9 = $('#section_Nine');
-    var section1Top = 925;
-    if (nav2.length) {
-        var section2Top = $("#section_Two").offset().height - (($("#section_Three").offset().height - $("#section_Two").offset().height) );
-        alert('section2Top')
-    }
-    if (nav3.length) {
-        var section3Top = $("#section_Three").offset().height - (($("#section_Four").offset().height - $("#section_Three").offset().height) / 2);
-    }
-    if (nav4.length) {
-        var section4Top = $("#section_Four").offset().top - (($("#section_Five").offset().top - $("#section_Four").offset().top) / 2);
-    }
-    if (nav5.length) {
-        var section5Top = $("#section_Five").offset().top - (($("#section_Six").offset().top - $("#section_Five").offset().top) / 2);
-    }
-    if (nav6.length) {
-        var section6Top = $("#section_Six").offset().top - (($("#section_Seven").offset().top - $("#section_Six").offset().top) / 2);
-    }
-    if (nav7.length) {
-        var section7Top = $("#section_Seven").offset().top - (($("#section_Eight").offset().top - $("#section_Seven").offset().top) / 2);
-    }
-    if (nav8.length) {
-        var section8Top = $("#section_Eight").offset().top - (($("#section_Nine").offset().top - $("#section_Eight").offset().top) / 2);
-    }
-    if (nav9.length) {
-        var section9Top = $("#section_Nine").offset().top - (($(document).height() - $("#section_Nine").offset().top) / 2);
-    }
-*/
-function dotNav() {
-    //    var nav1 = $('#section_One').height();
-    //    var nav2 = $('#section_Two').height();
-    //    var nav3 = $('#section_Three');
-    //    var nav4 = $('#section_Four');
-    //    var nav5 = $('#section_Five');
-    //    var nav6 = $('#section_Six');
-    //    var nav7 = $('#section_Seven');
-    //    var nav8 = $('#section_Eight');
-    //    var nav9 = $('#section_Nine');
+    
     var y = $(window).height();
     var section1 = y
     var section2 = y * 2

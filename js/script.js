@@ -128,45 +128,7 @@ $(document).on('scroll', function () {
 
 
 
-/*if ($(document).scrollTop() >= section1Top && $(document).scrollTop() < section2Top) {
-
-    } else if ($(document).scrollTop() >= 600 && $(document).scrollTop() <= 630) {
-
-        $('#type')[0].play();
-        $('.cube').animate({
-            'left': 0
-        }, {
-            duration: 1200
-            , complete: function () {
-
-                $('.ledwrite_user').attr('id', 'cubemoveArea');
-                $('.led').attr('id', 'newCube');
-                $('.ledwrite').addClass('cubemove');
-                $('.confirm').addClass('cubemoveConfirm');
-
-                var scrollPosition = [
-  self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft
-  
-                    , self.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
-];
-                var html = jQuery('html'); // it would make more sense to apply this to body, but IE7 won't have that
-                html.data('scroll-position', scrollPosition);
-                html.data('previous-overflow', html.css('overflow'));
-                html.css('overflow', 'hidden');
-                window.scrollTo(scrollPosition[0], scrollPosition[1]);
-                if ($('#ledwrite_user').value == "text") {
-                    alert('1')
-                }
-            }
-        });
-
-    } else if ($(document).scrollTop() >= section3Top && $(document).scrollTop() < section4Top) {
-
-    } else if ($(document).scrollTop() >= section4Top) {
-
-    }
-}
-*/
+/
 $(document).scroll(function () {
     var y = $(this).scrollTop();
     if (y > 200 && y < 350) {
@@ -175,45 +137,7 @@ $(document).scroll(function () {
     }
 })
 
-//$(document).scroll(function () {
-//        var y = $(this).scrollTop();
-    
-        
-//        
-//            $('#type')[0].play();
-//            $('#metall')[0].play();
-//
-//            $('.cube').animate({
-//                'left': 0
-//            }, {
-//                duration: 1200
-//                , complete: function () {
-//
-//                    $('.ledwrite_user').attr('id', 'cubemoveArea');
-//                    $('.led').attr('id', 'newCube');
-//                    $('.ledwrite').addClass('cubemove');
-//                    $('.confirm').addClass('cubemoveConfirm');
-//                }
-//            })
-//
-//            $.scrollify.disable()
-//
-//            $('body').addClass('stop-scrolling')
-//        })
-//        $('.confirm').click(function () {
-//            var text = $('.ledwrite_user').val();
-//            if (text == "text") {
-//                $('#computer').attr('id', 'fixedLogos');
-//                $('#hello_human')[0].play();
-//                $.scrollify.enable();
-//                //            $.scrollify.next();
-//                $.scrollify.move("#section_Four");
-//
-//                $('body').removeClass('stop-scrolling')
-//            } else {
-//                $('#stupid')[0].play();
-//            }
-//        })
+
     
     //================================TESTS==============
 
@@ -315,9 +239,7 @@ $(document).scroll(function () {
 
 //================================TESTS END==============
 
-//$(document).scroll(function () {
-//    console.log($(document).scrollTop());
-//})
+
 
 
 
